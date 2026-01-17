@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+
+}
+
+.margin-5{
+    margin-top:5vh;
+}
+
+.text-center{
+    text-align: center;
+}
+
+label{
+    font-size: 2.5rem;
+}
+select{
+    font-size: 1.5rem;
+}
+
+
+button{
+    background-color: #261d47;
+    color: #fafafa;
+    font-size: 1.5rem;
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+
+button:hover{
+    background-color: #fafafa;
+    color: #261d47;
+    border: #261d47 solid;
+    cursor: pointer;
+}
+
+#city-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#image{
+    width: 50%;
+}
+
+#info{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+}

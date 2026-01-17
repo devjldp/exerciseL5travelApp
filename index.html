@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login System</title>
+</head>
+<body>
+    <h1 class="text-center">WEBSITE LOGIN</h1>
+    
+    <div id="city-container" class="margin-5">
+        <div id="image">
+            <img src="" alt="">
+        </div>
+              
+        <div id="city-form">
+            <div>
+                <label for="city">City</label>
+                <select name="city" id="city">
+                    <option value="" >- Select a city -</option>
+                    <option value="london">London</option>
+                    <option value="paris">Paris</option>
+                    <option value="tokyo">Tokyo</option>
+                    <option value="coruna">A coruna</option>
+                    <option value="newyork">New York</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="nights">Number of nights </label>
+                <input type="number" name="nights" id="nights">
+            </div>
+
+            <div>
+                <label for="season">Month: </label>
+                <select name="season" id="season">
+                    <option value="" >- Select month -</option>
+                    <option value="1">July, August</option>
+                    <option value="2">May, June, September</option>
+                    <option value="3">Rest of months</option>
+                </select>
+            </div>
+        </div>
+    </div>
+   
+    <div class="text-center">
+        <button id="calculate" class="margin-5">Calculate</button>
+    </div>
+
+    <div id="feedback"> </div>
+
+    <hr>
+
+    <div id="info">
+        <section>
+            <h3>Base cost</h3>
+            <p>All destinations have a base cost of £50</p>
+        </section>
+        <section>
+            <h3>Seasons</h3>
+            <p>50% if you book in July and August</p>
+            <p>20% if you book in May,June and September</p>
+        </section>
+            <section>
+
+            <h3>City Fee</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <td>City</td>
+                        <td>Fee</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>London</td>
+                        <td>40%</td>
+                    </tr>
+                    <tr>
+                        <td>Paris</td>
+                        <td>35%</td>
+                    </tr>
+                    <tr>
+                        <td>Tokyo</td>
+                        <td>50%</td>
+                    </tr>
+                    <tr>
+                        <td>New York</td>
+                        <td>45%</td>
+                    </tr>
+                    <tr>
+                        <td>A Coruna</td>
+                        <td>20%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <script src="city.js"></script>
+    
+</body>
+</html>
