@@ -2,7 +2,10 @@
 const calculate = document.querySelector('button')
 const messageContainer = document.getElementById("feedback")
 
-
+/**
+ * Displays an image of the city you pass
+ * @param {string} city the city you want to display an image
+ */
 function displayImageCity(city){
     const cityImage = document.querySelector('img')
     switch(city){
@@ -29,6 +32,13 @@ function displayImageCity(city){
     }
 }
 
+/**
+ * 
+ * @param {string} city 
+ * @param {int} nights 
+ * @param {string} season 
+ * @returns total price in destination selected
+ */
 function calculatePrice(city, nights, season){
     let basecost = 50
     let seasonExtra
@@ -63,14 +73,16 @@ function calculatePrice(city, nights, season){
 
 
 calculate.addEventListener('click', () => {
+    // reset the message that indicates the final price
     messageContainer.innerHTML = ''
-    
+    // Get the value directly form the inputs -> data type is a string
     const selectCity = document.getElementById('city').value
     const selectNights = document.getElementById('nights').value
     const selectSeason = document.getElementById('season').value
 
     displayImageCity(selectCity)
     let totalCost = calculatePrice(selectCity, parseInt(selectNights), selectSeason)
+    // transform string to int
     
     const message = document.createElement('p')
     message.textContent = `Total cost for ${selectNights} nights in ${selectCity} is £${totalCost}`
