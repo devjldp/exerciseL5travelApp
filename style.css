@@ -53,3 +53,60 @@ button:hover{
     justify-content: space-around;
     align-items: baseline;
 }
+
+
+/* mobiles*/
+@media (max-width: 768px) {
+
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    /* Contenedor principal */
+    #city-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 0;
+    }
+
+    /* Imagen */
+    #image img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Formulario */
+    #city-form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #city-form div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        margin-bottom: 5px;
+    }
+
+    select,
+    input {
+        width: 100%;
+        padding: 8px;
+        font-size: 1rem;
+    }
+
+    /* Botón */
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+}
